@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0AD33420C36CFD006F6AE1 /* CoreDataStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0AD33320C36CFD006F6AE1 /* CoreDataStation.swift */; };
+		3F0AD33620C36DB8006F6AE1 /* VilloStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0AD33520C36DB8006F6AE1 /* VilloStation.swift */; };
+		3F0AD33820C379C7006F6AE1 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0AD33720C379C7006F6AE1 /* MapAnnotation.swift */; };
 		3FFEFF2120C32D2D00E6E93E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEFF2020C32D2D00E6E93E /* AppDelegate.swift */; };
 		3FFEFF2320C32D2D00E6E93E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEFF2220C32D2D00E6E93E /* ViewController.swift */; };
 		3FFEFF2620C32D2D00E6E93E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFEFF2420C32D2D00E6E93E /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F0AD33320C36CFD006F6AE1 /* CoreDataStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStation.swift; sourceTree = "<group>"; };
+		3F0AD33520C36DB8006F6AE1 /* VilloStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VilloStation.swift; sourceTree = "<group>"; };
+		3F0AD33720C379C7006F6AE1 /* MapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
 		3FFEFF1D20C32D2D00E6E93E /* oefening2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oefening2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFEFF2020C32D2D00E6E93E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFEFF2220C32D2D00E6E93E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +112,9 @@
 				3FFEFF2C20C32D2D00E6E93E /* LaunchScreen.storyboard */,
 				3FFEFF2F20C32D2D00E6E93E /* Info.plist */,
 				3FFEFF2720C32D2D00E6E93E /* oefening2.xcdatamodeld */,
+				3F0AD33320C36CFD006F6AE1 /* CoreDataStation.swift */,
+				3F0AD33520C36DB8006F6AE1 /* VilloStation.swift */,
+				3F0AD33720C379C7006F6AE1 /* MapAnnotation.swift */,
 			);
 			path = oefening2;
 			sourceTree = "<group>";
@@ -263,8 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FFEFF2320C32D2D00E6E93E /* ViewController.swift in Sources */,
+				3F0AD33420C36CFD006F6AE1 /* CoreDataStation.swift in Sources */,
 				3FFEFF2120C32D2D00E6E93E /* AppDelegate.swift in Sources */,
+				3F0AD33620C36DB8006F6AE1 /* VilloStation.swift in Sources */,
 				3FFEFF2920C32D2D00E6E93E /* oefening2.xcdatamodeld in Sources */,
+				3F0AD33820C379C7006F6AE1 /* MapAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +519,7 @@
 				3FFEFF4A20C32D2E00E6E93E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FFEFF4B20C32D2E00E6E93E /* Build configuration list for PBXNativeTarget "oefening2Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +528,7 @@
 				3FFEFF4D20C32D2E00E6E93E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FFEFF4E20C32D2E00E6E93E /* Build configuration list for PBXNativeTarget "oefening2UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +537,7 @@
 				3FFEFF5020C32D2E00E6E93E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

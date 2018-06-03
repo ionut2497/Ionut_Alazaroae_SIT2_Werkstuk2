@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="oefening2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,59 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RtN-gP-XCd">
+                                <rect key="frame" x="0.0" y="67" width="375" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="d76-y9-Oag"/>
+                                </constraints>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Villo Stations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK7-B0-rDF">
+                                <rect key="frame" x="137" y="28" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNK-9P-88D">
+                                <rect key="frame" x="306" y="24" width="53" height="30"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshVilloStations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UgH-CT-8Gh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last refresh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihO-0d-MNS">
+                                <rect key="frame" x="16" y="29" width="77.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RtN-gP-XCd" firstAttribute="top" secondItem="BK7-B0-rDF" secondAttribute="bottom" constant="18" id="CWE-GU-16F"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RtN-gP-XCd" secondAttribute="bottom" id="H4o-l8-8lE"/>
+                            <constraint firstItem="mNK-9P-88D" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="I8b-ob-pGm"/>
+                            <constraint firstItem="mNK-9P-88D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="RMz-Og-1Jf"/>
+                            <constraint firstItem="BK7-B0-rDF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="121" id="TOS-av-rXU"/>
+                            <constraint firstItem="RtN-gP-XCd" firstAttribute="top" secondItem="ihO-0d-MNS" secondAttribute="bottom" constant="17" id="VGj-lV-gwt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BK7-B0-rDF" secondAttribute="trailing" constant="122" id="XXr-v8-XFS"/>
+                            <constraint firstItem="ihO-0d-MNS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="9" id="a64-Fd-7MN"/>
+                            <constraint firstItem="BK7-B0-rDF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="azO-tq-x08"/>
+                            <constraint firstItem="RtN-gP-XCd" firstAttribute="top" secondItem="mNK-9P-88D" secondAttribute="bottom" constant="13" id="bo7-P0-VeN"/>
+                            <constraint firstItem="RtN-gP-XCd" firstAttribute="top" secondItem="mNK-9P-88D" secondAttribute="bottom" constant="13" id="jtp-xX-kfK"/>
+                            <constraint firstItem="ihO-0d-MNS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="npv-Yw-rAz"/>
+                            <constraint firstAttribute="trailing" secondItem="RtN-gP-XCd" secondAttribute="trailing" id="oMl-Wc-db2"/>
+                            <constraint firstItem="RtN-gP-XCd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yX5-qG-WdD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lastRefresh" destination="ihO-0d-MNS" id="gUq-NA-VpZ"/>
+                        <outlet property="myMap" destination="RtN-gP-XCd" id="FkT-aN-5l7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="303" y="121"/>
         </scene>
     </scenes>
 </document>
